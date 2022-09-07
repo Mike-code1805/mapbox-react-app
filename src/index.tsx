@@ -5,8 +5,7 @@ import App from './App';
 //@ts-ignore
 import mapboxgl from '!mapbox-gl'; // or "const mapboxgl = require('mapbox-gl');"
 
-mapboxgl.accessToken =
-  'pk.eyJ1IjoibWlrZWNvZGUiLCJhIjoiY2w3cWU3M2d3MDRtNDN1cHA5ZTJrMXNmbiJ9.RPdE9IN9kxtRQ0JzAH9UDw';
+mapboxgl.accessToken =process.env.REACT_APP_TOKEN_MAP;
 
 if (!navigator.geolocation) {
   alert('Your browser does not support');

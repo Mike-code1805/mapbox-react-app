@@ -32,6 +32,10 @@ export const MapView = () => {
     return <Loading />;
   }
 
+  const variable = process.env;
+  console.log(variable);
+  console.log(process.env);
+
   return (
     <div
       ref={mapDiv}
